@@ -1,0 +1,65 @@
+examples:
+  - id: usage-question
+    title:
+      zh: 解答星光操作问题
+      en: Answer a Sparklight usage question
+    description:
+      zh: 回答星光任意模块的具体操作问题，给出路径、步骤和注意事项
+      en: Answer any question about operating a Sparklight feature with paths, steps and caveats
+    prompt:
+      zh: |-
+        我想在讯飞星光里{{描述你想完成的操作，如：给班级学生布置一次作业}}，请告诉我具体的操作路径、步骤和注意事项。
+      en: |-
+        I want to {{describe the operation, e.g. assign homework to my class}} in iFLYTEK Sparklight. Please give me the exact path, steps and caveats.
+
+  - id: lesson-prep-resource
+    title:
+      zh: 生成备课教学资源
+      en: Create a lesson-prep resource
+    description:
+      zh: 指导用星光生成课件、交互动画、课堂游戏、试卷或教学应用
+      en: Guide creating courseware, interactive animation, classroom games, test papers or teaching apps
+    prompt:
+      zh: |-
+        我要用讯飞星光制作{{资源类型：教学课件/交互动画/课堂游戏/命题组卷/教学应用}}，内容是{{学科年级和主题}}，请给出从入口到发布下载的完整操作流程和提示词建议。
+      en: |-
+        I want to create a {{resource type: courseware / interactive animation / classroom game / test paper / teaching app}} in Sparklight for {{subject, grade and topic}}. Give me the full workflow from entry to publish/download, plus prompt suggestions.
+
+  - id: home-school
+    title:
+      zh: 家校沟通操作指引
+      en: Home-school communication guide
+    description:
+      zh: 班级导入、日常表现点评、作业打卡、班级宠物、学情分析等操作
+      en: Class roster import, performance records, homework, check-ins, class pets, learning analytics
+    prompt:
+      zh: |-
+        请讲解讯飞星光家校沟通模块的{{具体功能，如：导入班级学生/日常表现点评/发布打卡/班级宠物}}怎么用，包含首次配置和日常操作。
+      en: |-
+        Explain how to use {{feature: roster import / performance records / check-ins / class pets}} in Sparklight's home-school communication module, including first-time setup and daily use.
+
+  - id: training-material
+    title:
+      zh: 撰写星光培训材料
+      en: Draft Sparklight training material
+    description:
+      zh: 面向教师的培训讲稿、操作手册、常见问答或微课内容
+      en: Teacher-facing training scripts, operation guides, FAQ or micro-course content
+    prompt:
+      zh: |-
+        请基于讯飞星光2.0使用指南，为{{目标教师群体}}撰写一份{{材料形式：培训讲稿/图文操作手册/常见问答FAQ/微课大纲}}，主题是{{培训主题或模块范围}}。
+      en: |-
+        Based on the Sparklight 2.0 user guide, draft a {{script / illustrated guide / FAQ / micro-course outline}} on {{topic or module scope}} for {{target teacher audience}}.
+
+  - id: skill-management
+    title:
+      zh: 技能与设置管理
+      en: Skills and settings management
+    description:
+      zh: 技能安装/新建/编辑、连接器、讯飞产品授权、记忆等配置类操作
+      en: Skill install/create/edit, connectors, iFLYTEK product authorization, memory settings
+    prompt:
+      zh: |-
+        我想了解讯飞星光的{{配置项：技能的新建与编辑/连接器配置/讯飞产品授权/记忆管理}}，请给出完整设置方法和我需要注意的坑。
+      en: |-
+        Explain Sparklight's {{configuration: skill creation and editing / connector setup / iFLYTEK product authorization / memory management}} in full, including pitfalls to avoid.
