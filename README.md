@@ -200,9 +200,12 @@ cp -r xunfei-sparklight-guide ~/<技能目录>/xunfei-sparklight-guide
 - 具体学科内容的生成质量取决于星光后端模型，不在本 Skill 控制范围内
 - 手册中未明确标注的功能细节，Skill 会如实说明"手册未覆盖"而非编造
 
-## 📄 License
+## 📄 版权与许可
 
-MIT License — 自由使用、修改和分发。
+- **作者**：[yannkun](https://github.com/yannkun)
+- **仓库地址**：https://github.com/yannkun/xunfei-sparklight-guide
+- **许可协议**：MIT License — 自由使用、修改和分发
+- **版权声明**：转载或二次分发请保留本段出处信息，并附上方仓库链接。本 Skill 内容基于讯飞星光官方手册及培训课件整理；"讯飞星光""Sparklight"等相关名称与商标归科大讯飞股份有限公司所有，本项目仅作使用培训用途，与讯飞官方无隶属关系。
 
 ---
 
