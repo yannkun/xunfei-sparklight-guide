@@ -6,7 +6,7 @@
 
 ## 📖 这是什么
 
-这是一个面向 [QwenWork](https://qwenwork.cn) 平台的 Agent Skill（智能体技能），专为**科大讯飞·星光教师超级智能体**（[sparklight.cn](https://www.sparklight.cn/)）的使用培训与答疑场景设计。
+这是一个面向星光平台的 Agent Skill（智能体技能），专为**科大讯飞·星光教师超级智能体**（[sparklight.cn](https://www.sparklight.cn/)）的使用培训与答疑场景设计。
 
 它将星光 2.0 的完整产品功能（8 章 106 页官方手册 + 145 页讲师培训课件）蒸馏为结构化知识库，使 AI 能够：
 
@@ -91,13 +91,13 @@ xunfei-sparklight-guide/
 |---|---|---|
 | `SKILL.md` | 产品速览 + 模块地图 + 核心流程 + 回答规范 | AI Agent（每次对话加载） |
 | `reference.md` | 8章逐步操作路径、界面入口、完整说明 | AI Agent（按需查阅具体章节） |
-| `.skill-metadata.yaml` | 5 个推荐问题（用户点击技能时展示） | QwenWork 客户端 UI |
+| `.skill-metadata.yaml` | 5 个推荐问题（用户点击技能时展示） | 客户端 UI |
 
 ## 🚀 安装与使用
 
 ### 前提条件
 
-- 已安装 [QwenWork 桌面客户端](https://qwenwork.cn)（macOS / Windows）
+- 已安装支持 Agent Skill 的桌面客户端（macOS / Windows）
 - 网络正常（首次加载需下载技能包）
 
 ### 安装方式
@@ -105,7 +105,7 @@ xunfei-sparklight-guide/
 **方式一：通过 .zip 文件安装**
 
 1. 下载本仓库的 `.zip`（GitHub 页面 → Code → Download ZIP）
-2. 打开 QwenWork → 设置 → 技能管理 → 导入技能
+2. 打开客户端 → 设置 → 技能管理 → 导入技能
 3. 选择下载的 `.zip` 文件 → 确认安装
 
 **方式二：手动放置**
@@ -114,16 +114,16 @@ xunfei-sparklight-guide/
 # 克隆本仓库
 git clone https://github.com/yannkun/xunfei-sparklight-guide.git
 
-# 复制到技能目录（Windows）
-xcopy xunfei-sparklight-guide %USERPROFILE%\.qwenworkcn\skills\xunfei-sparklight-guide /E /I
+# 复制到客户端的技能目录（路径以客户端设置中显示的技能目录为准）
+xcopy xunfei-sparklight-guide %USERPROFILE%\<技能目录>\xunfei-sparklight-guide /E /I
 
-# 复制到技能目录（macOS/Linux）
-cp -r xunfei-sparklight-guide ~/.qwenworkcn/skills/xunfei-sparklight-guide
+# 复制到客户端的技能目录（macOS/Linux）
+cp -r xunfei-sparklight-guide ~/<技能目录>/xunfei-sparklight-guide
 ```
 
 ### 快速上手
 
-安装后，在 QwenWork 对话框中直接提问即可触发：
+安装后，在客户端对话框中直接提问即可触发：
 
 - 「讯飞星光怎么生成一份教案？」
 - 「家校沟通里的群守护怎么用？」
@@ -136,7 +136,7 @@ cp -r xunfei-sparklight-guide ~/.qwenworkcn/skills/xunfei-sparklight-guide
 
 ```
 ┌─────────────────────────────────────────────────────┐
-│              QwenWork Agent Runtime                  │
+│              Agent Runtime                           │
 ├─────────────────────────────────────────────────────┤
 │                                                     │
 │  User Query ──→ Skill Discovery (description match) │
