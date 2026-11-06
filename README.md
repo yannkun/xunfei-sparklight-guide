@@ -2,9 +2,6 @@
   <img src="assets/banner.png" alt="讯飞星光 2.1 使用指南" />
 </p>
 
-<p align="center">
-  <img src="assets/icon.png" width="112" alt="讯飞星光 2.1 图标" />
-</p>
 
 <h1 align="center">讯飞星光 2.1 使用指南 Skill</h1>
 
