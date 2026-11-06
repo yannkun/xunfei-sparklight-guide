@@ -1,3 +1,4 @@
+author: Yann
 examples:
   - id: usage-question
     title:
@@ -8,9 +9,35 @@ examples:
       en: Answer any question about operating a Sparklight feature with paths, steps and caveats
     prompt:
       zh: |-
-        我想在讯飞星光里{{描述你想完成的操作，如：给班级学生布置一次作业}}，请告诉我具体的操作路径、步骤和注意事项。
+        我想在讯飞星光 2.1.0 里{{描述你想完成的操作，如：给班级学生布置一次作业}}，请告诉我具体的操作路径、步骤和注意事项。
       en: |-
-        I want to {{describe the operation, e.g. assign homework to my class}} in iFLYTEK Sparklight. Please give me the exact path, steps and caveats.
+        I want to {{describe the operation, e.g. assign homework to my class}} in iFLYTEK Sparklight 2.1.0. Please give me the exact path, steps and caveats.
+
+  - id: create-agent
+    title:
+      zh: 对话创建专属智能体
+      en: Create a personal agent by conversation
+    description:
+      zh: 用自然语言造一个学科专属助手，并完成召唤、改头像与日常管理
+      en: Build a subject-specific assistant in natural language, then summon, restyle and manage it
+    prompt:
+      zh: |-
+        我要在星光 2.1.0 里用对话创建一个{{学科+学段}}的{{助手定位，如：实验出题助手}}，请给我可直接复制的创建指令、召唤路径，以及之后在「我的智能体」里怎么管理。
+      en: |-
+        Create a {{subject + grade}} {{assistant role}} agent in Sparklight 2.1.0 by conversation. Give me a copy-ready creation prompt, the summon path, and how to manage it under My Agents.
+
+  - id: h5-bigscreen-app
+    title:
+      zh: 双端 H5 应用上教室大屏
+      en: Deploy a dual-end H5 app to the classroom screen
+    description:
+      zh: 从需求描述到蓝图确认、安装、生成免登录链接并授权班级的完整闭环
+      en: From requirement to blueprint, install, login-free link generation and class authorization
+    prompt:
+      zh: |-
+        我想在教室大屏上用星光的{{应用类型，如：班级任务看板/随堂测验数据回收}}，管理端在{{办公室电脑/手机}}。请按四步法给我完整提示词、生成链接的有效期与授权班级配置，以及安全注意事项。
+      en: |-
+        I want to run a {{app type, e.g. class dashboard / in-class quiz data collection}} on the classroom screen with the admin side on my {{office PC / phone}}. Walk me through the four steps: prompt, login-free link with validity and class authorization, plus safety notes.
 
   - id: lesson-prep-resource
     title:
@@ -23,43 +50,69 @@ examples:
       zh: |-
         我要用讯飞星光制作{{资源类型：教学课件/交互动画/课堂游戏/命题组卷/教学应用}}，内容是{{学科年级和主题}}，请给出从入口到发布下载的完整操作流程和提示词建议。
       en: |-
-        I want to create a {{resource type: courseware / interactive animation / classroom game / test paper / teaching app}} in Sparklight for {{subject, grade and topic}}. Give me the full workflow from entry to publish/download, plus prompt suggestions.
+        I want to create a {{resource type}} in Sparklight for {{subject, grade and topic}}. Give me the full workflow from entry to publish/download, plus prompt suggestions.
+
+  - id: dialog-group
+    title:
+      zh: 用分组做单元备课
+      en: Run a unit-prep project with folders
+    description:
+      zh: 新建分组、写分组指令、挂课标教材，让组内对话共享资料与记忆
+      en: Create a folder, write its instruction, attach curriculum files and share context across chats
+    prompt:
+      zh: |-
+        请指导我在星光 2.1.0 里为{{年级+学科+单元}}建一个分组：分组设置弹窗里的「指令」该怎么写、相关资料怎么挂，以及组内怎么连续做教案、课件和复习试卷而不重复投喂。
+      en: |-
+        Show me how to set up a folder for {{grade + subject + unit}} in Sparklight 2.1.0: how to write the folder instruction, what materials to attach, and how to chain lesson plan, courseware and review paper tasks without re-uploading.
 
   - id: home-school
     title:
       zh: 家校沟通操作指引
       en: Home-school communication guide
     description:
-      zh: 班级导入、日常表现点评、作业打卡、班级宠物、学情分析等操作
-      en: Class roster import, performance records, homework, check-ins, class pets, learning analytics
+      zh: 班级导入、日常表现点评、作业打卡、班级宠物（含分层班）、学情分析等操作
+      en: Roster import, performance records, homework, check-ins, class pets including streamed classes, learning analytics
     prompt:
       zh: |-
-        请讲解讯飞星光家校沟通模块的{{具体功能，如：导入班级学生/日常表现点评/发布打卡/班级宠物}}怎么用，包含首次配置和日常操作。
+        请讲解讯飞星光家校沟通模块的{{具体功能，如：导入班级学生/日常表现点评/发布打卡/分层班宠物/群守护}}怎么用，包含首次配置和日常操作。
       en: |-
-        Explain how to use {{feature: roster import / performance records / check-ins / class pets}} in Sparklight's home-school communication module, including first-time setup and daily use.
+        Explain how to use {{feature}} in Sparklight's home-school communication module, including first-time setup and daily use.
 
   - id: training-material
     title:
       zh: 撰写星光培训材料
       en: Draft Sparklight training material
     description:
-      zh: 面向教师的培训讲稿、操作手册、常见问答或微课内容
-      en: Teacher-facing training scripts, operation guides, FAQ or micro-course content
+      zh: 面向教师的培训讲稿、图文操作手册、常见问答或全校宣讲提纲
+      en: Teacher-facing training scripts, illustrated guides, FAQ or school-wide briefing outline
     prompt:
       zh: |-
-        请基于讯飞星光2.0使用指南，为{{目标教师群体}}撰写一份{{材料形式：培训讲稿/图文操作手册/常见问答FAQ/微课大纲}}，主题是{{培训主题或模块范围}}。
+        请基于讯飞星光2.1.0使用指南，为{{目标教师群体}}撰写一份{{材料形式：培训讲稿/图文操作手册/常见问答FAQ/全校宣讲提纲}}，主题是{{培训主题或模块范围}}。凡是未经界面核实的功能，请标注「以实际界面为准」，不要编造按钮名称。
       en: |-
-        Based on the Sparklight 2.0 user guide, draft a {{script / illustrated guide / FAQ / micro-course outline}} on {{topic or module scope}} for {{target teacher audience}}.
+        Based on the Sparklight 2.1.0 user guide, draft a {{format}} on {{topic}} for {{target teachers}}. Mark anything not verified against the real UI as "subject to the actual interface" and never invent button names.
 
-  - id: skill-management
+  - id: connector-setup
     title:
-      zh: 技能与设置管理
-      en: Skills and settings management
+      zh: 连接器与三合一管理
+      en: Connectors and the three-in-one hub
     description:
-      zh: 技能安装/新建/编辑、连接器、讯飞产品授权、记忆等配置类操作
-      en: Skill install/create/edit, connectors, iFLYTEK product authorization, memory settings
+      zh: 事务助理三合一、金山文档/飞书/ima 连接、产品授权与记忆配置
+      en: The three-in-one hub, 金山文档/飞书/ima connections, product authorization and memory settings
     prompt:
       zh: |-
-        我想了解讯飞星光的{{配置项：技能的新建与编辑/连接器配置/讯飞产品授权/记忆管理}}，请给出完整设置方法和我需要注意的坑。
+        我想了解讯飞星光 2.1.0 事务助理里的{{配置项：智能体管理/连接器（含金山文档、飞书、ima）/技能启停}}怎么配置，请给出完整设置方法和我需要注意的坑。
       en: |-
-        Explain Sparklight's {{configuration: skill creation and editing / connector setup / iFLYTEK product authorization / memory management}} in full, including pitfalls to avoid.
+        Explain how to configure {{item}} in Sparklight 2.1.0's Assistant hub, including pitfalls to avoid.
+
+  - id: concept-explainer
+    title:
+      zh: 讲清四个概念与智能导师入口
+      en: Explain the four concepts and where to find the mentor
+    description:
+      zh: 区分技能、连接器、智能体、智能导师，并给出智能导师在星光 2.1.0 中的真实入口
+      en: Distinguish skill, connector, agent and mentor, and give the real entry point for the mentor in Sparklight 2.1.0
+    prompt:
+      zh: |-
+        请用培训授课的口径讲清讯飞星光里的技能、连接器、智能体、智能导师分别是什么、彼此什么关系。重点说明智能导师在星光 2.1.0 里从哪里进入，以及它和普通智能体有什么区别。
+      en: |-
+        Explain, in a training-friendly way, what skill, connector, agent and mentor mean in Sparklight 2.1.0 and how they relate. Focus on where the mentor is located and how it differs from a regular agent.
