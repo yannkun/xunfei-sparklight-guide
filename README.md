@@ -17,8 +17,6 @@
   <img src="https://img.shields.io/badge/author-Yann-ff7a45?style=flat-square" alt="author">
 </p>
 
-> 技能是做事的方法，连接器是数据与操作的通道，智能体是有名字、有性格、会长期陪老师做事的 AI 伙伴，智能导师是以真人专家为原型的 AI 导师。
-
 ## 📖 这是什么
 
 这是一个面向 **科大讯飞·星光教师超级智能体**（[sparklight.cn](https://www.sparklight.cn/)）的 Agent Skill。它以 V2.1.0（2026-10-28 发布）为准，把产品操作、版本差异与核心概念整理成 AI 可以直接调用的知识库。
