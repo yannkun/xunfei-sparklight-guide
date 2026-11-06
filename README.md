@@ -8,7 +8,7 @@
 
 <h1 align="center">讯飞星光 2.1 使用指南 Skill</h1>
 
-<p align="center">把产品手册变成会答问题的 AI 同事</p>
+<p align="center">帮老师把星光用起来</p>
 
 <p align="center">
   <a href="https://github.com/yannkun/xunfei-sparklight-guide/releases"><img src="https://img.shields.io/badge/version-2.1.0-2f6bff?style=flat-square" alt="version"></a>
